@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+service MessageService {
+    rpc List (Empty) returns (MessageList) {}
+    rpc Find (MessageRequestId) returns (Message) {}
+    rpc Insert (Message) returns (Message) {}
+    rpc Alter (Message) returns (Message) {}
+    rpc Delete (MessageRequestId) returns (Message) {}
+}
+
+message Empty {}
+message Message {
+   string id = 1;
+   string desc = 2;
+   string status = 3;
+}
+
+message UUID {
+  required string value = 1;
+}
+
+message MessageRequestId {
+    string id = 1;
+}
+
+message MessageList {
+   repeated Message Messages = 1;
+}

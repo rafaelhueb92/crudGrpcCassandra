@@ -1,0 +1,10 @@
+{
+    "cassandraCx": {
+        "username": "",
+        "password": "",
+        "localDataCenter":"",
+        "protocolOptions": { "port": 9042 },
+        "contactPoints": [""],
+        "keyspace":""
+      }
+}

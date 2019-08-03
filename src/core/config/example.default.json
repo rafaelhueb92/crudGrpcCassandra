@@ -6,5 +6,15 @@
         "protocolOptions": { "port": 9042 },
         "contactPoints": [""],
         "keyspace":""
+      },
+      "mongoCx":{
+        "connectionString":""
+      },
+      "sequalizeCx":{
+        "username": "root",
+        "password": "********",
+        "database": "test",
+        "dialect": "mysql",
+        "port":8008
       }
 }

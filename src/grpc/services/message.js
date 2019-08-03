@@ -1,6 +1,6 @@
 const grpc = require("grpc");
 const messagesProto = grpc.load("./src/protos/message.proto");
-const { message } = require("../../core/db/cassandra/models");
+const { message } = require("../../core/db");
 const { deparaObjetos } = require("../../core/utils/object");
 
 module.exports = {

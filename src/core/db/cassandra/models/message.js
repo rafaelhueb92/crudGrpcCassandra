@@ -10,7 +10,7 @@ const mappingOptions = {
       tables: ["message"],
       mappings: new UnderscoreCqlToCamelCaseMappings(),
       columns: {
-        messageid: "id",
+        messageid: "_id",
         description: "desc",
         status: "status"
       }
